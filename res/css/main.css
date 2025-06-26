@@ -548,3 +548,7 @@ footer ul.iconsbrand li a i {
     padding: 2rem 1rem;
   }
 }
+
+.credit a {
+  text-decoration: none;
+}
