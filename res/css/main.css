@@ -449,6 +449,12 @@ footer ul.iconsbrand li a i {
   height: auto;
 }
 
+.spoiler-dicription h2 {
+  color: #004b87;
+  padding-top: 1rem;
+  font-weight: 300;
+}
+
 .spoiler-dicription p,
 .spoiler-dicription span {
   color: #1e3265;
