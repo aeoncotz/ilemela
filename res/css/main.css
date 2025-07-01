@@ -570,3 +570,43 @@ footer ul.iconsbrand li a i {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.section {
+  background-color: #ffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.section h5 {
+  font-weight: 400;
+  border-bottom: 2px solid #dee2e6;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 1rem;
+  color: #004b87;
+}
+.table thead {
+  background-color: #004b87;
+  color: white;
+}
+.table tbody td {
+  vertical-align: middle;
+}
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+ol li,
+ul li,
+ol strong,
+ul strong {
+  margin-bottom: 0.5rem;
+  color: #004b87;
+}
+
+.table-info {
+  background: #004b87;
+}
