@@ -235,9 +235,10 @@ body {
   padding: 0 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 999px) {
   .welcome {
     padding: 3rem 3%;
+    flex-direction: column;
   }
   .welcome .description {
     padding: 2rem 1rem;
