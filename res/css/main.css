@@ -294,23 +294,19 @@ body {
 }
 
 .recent-acctivies .activity-1 {
-  background: url(../imgs/upload/dummy_700x700_ffffff_cccccc.png);
+  background: url(../imgs/instagram/feed-1.png);
 }
 
 .recent-acctivies .activity-2 {
-  background: url(../imgs/upload/dummy_700x700_ffffff_cccccc.png);
-}
-
-.recent-acctivies .activity-2 {
-  background: url(../imgs/upload/dummy_700x700_ffffff_cccccc.png);
+  background: url(../imgs/instagram/feed-2.png);
 }
 
 .recent-acctivies .activity-3 {
-  background: url(../imgs/upload/dummy_700x700_ffffff_cccccc.png);
+  background: url(../imgs/instagram/feed-3.png);
 }
 
 .recent-acctivies .activity-4 {
-  background: url(../imgs/upload/dummy_700x700_ffffff_cccccc.png);
+  background: url(../imgs/instagram/feed-4.png);
 }
 
 .container-activities .heading-text {
@@ -535,6 +531,33 @@ footer ul.iconsbrand li a i {
   overflow: hidden;
 }
 
+.easy-navigation .block-nav .image.about {
+  width: 100%;
+  height: 100%;
+  background: url(../imgs/about.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.easy-navigation .block-nav .image.admission {
+  width: 100%;
+  height: 100%;
+  background: url(../imgs/admission.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
 .easy-navigation .block-nav a {
   height: 100%;
   width: 100%;
@@ -610,4 +633,8 @@ ul strong {
 
 .table-info {
   background: #004b87;
+}
+
+.hover-to-light a{
+  text-decoration: none; color:red;
 }
