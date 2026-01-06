@@ -219,7 +219,7 @@ try {
     $mail->Host       = 'mail.ilemelaschools.ac.tz';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'info@ilemelaschools.ac.tz';
-    $mail->Password   = 'schools@ilemela2026';
+    $mail->Password   = 'school@ilemela2026';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
