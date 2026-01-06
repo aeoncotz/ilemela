@@ -412,7 +412,9 @@ footer ul.iconsbrand li a i {
 }
 
 .banner ul li a {
+  text-decoration: none;
   color: #ffff;
+  font-family: "Poppins", sans-serif;
 }
 
 .banner h3 {
