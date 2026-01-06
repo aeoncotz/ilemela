@@ -792,6 +792,29 @@ ul strong {
   background: #004b87;
 }
 
-.hover-to-light a{
-  text-decoration: none; color:red;
+.instagram-btn {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-btn a{
+  text-decoration: none;
+  color: #b22222;
+  padding: 5px 15px;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid #b22222;
+  transition: all ease .3s;
+}
+
+.instagram-btn a:hover {
+  background: #b22222;
+  color: #ffff;
+}
+
+.form-select option{
+  color: #1e3265;
+  counter-reset: option;
 }
