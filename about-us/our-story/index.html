@@ -311,6 +311,47 @@
       </footer>
     </div>
 
+    <!-- cookies icon -->
+    <div id="cookie-anchor" onclick="toggleModal(true)">
+        <img src="../../res/imgs/cookie.png" alt="Cookies" width="30">
+    </div>
+
+    <div id="cookie-banner" class="hidden">
+        <div class="banner-container">
+            <p class="banner-text poppins-light">
+                We use cookies to improve your experience and analyze traffic. 
+                <a href="javascript:void(0)" onclick="toggleModal(true)">Manage Preferences</a>
+            </p>
+            <div class="banner-btns">
+                <button class="btn-settings poppins-light" onclick="toggleModal(true)">Settings</button>
+                <button class="btn-accept poppins-light" onclick="saveConsent(true)">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookie-modal-overlay" class="hidden">
+        <div class="cookie-modal">
+            <h2 style="margin-top:0" class="poppins-regular">Cookie Settings</h2>
+            <p class="poppins-light">Select which cookies you want to allow:</p>
+            
+            <div class="cookie-option poppins-light">
+                <span><strong>Necessary</strong><br><small>Required for site to work.</small></span>
+                <input type="checkbox" checked disabled>
+            </div>
+
+            <div class="cookie-option poppins-light">
+                <span><strong>Analytics</strong><br><small>Help us understand usage.</small></span>
+                <input type="checkbox" id="analytics-check">
+            </div>
+
+            <button class="btn-save poppins-light" onclick="saveFromModal()">Save Preferences</button>
+            <button class="btn-save poppins-light" style="background: #b22222; color:#ad4141; margin-top:10px;" onclick="toggleModal(false)">Cancel</button>
+        </div>
+    </div>
+
+    <!-- coookies script -->
+    <script src="../../res/js/cookies.js"></script>
+
     <!-- bootstrap script cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
