@@ -13,51 +13,16 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 
-    <link rel="stylesheet" href="res/css/poppins.css" />
-    <link rel="stylesheet" href="res/css/main.css" />
-    
-    <style>
-        .support-card {
-            border: 1px solid #e2e8f0;
-            border-radius: 15px;
-            transition: all 0.3s ease;
-            background: #fff;
-        }
-        .support-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            border-color: #1e3265;
-        }
-        .icon-circle {
-            width: 50px;
-            height: 50px;
-            background: #f0f4ff;
-            color: #1e3265;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        .contact-sidebar {
-            background: #1e3265;
-            color: white;
-            border-radius: 15px;
-            padding: 30px;
-        }
-        .form-control:focus {
-            border-color: #1e3265;
-            box-shadow: none;
-        }
-    </style>
+    <link rel="stylesheet" href="../res/css/poppins.css" />
+    <link rel="stylesheet" href="../res/css/main.css" />
+    <link rel="stylesheet" href="res/css/support.css" />
 </head>
 
 <body>
     <nav class="navbar poppins-light navbar-expand-lg sticky-top bg-white border-bottom">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://ilemelaschools.ac.tz">
-                <img src="res/imgs/logo/hero-logo.png" alt="Logo" height="50"/>
+                <img src="../res/imgs/logo/hero-logo.png" alt="Logo" height="50"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarModern">
                 <span class="navbar-toggler-icon"></span>
@@ -177,37 +142,82 @@
 
     <div class="container-fluid footer poppins-light border-top">
         <footer class="py-5">
-            <div class="row far-apart">
-                <div class="col-6 col-md-3 mb-3">
-                    <h5>Our Address</h5>
-                    <ul class="nav flex-column">
-                        <li><span class="text-muted">Ilemela English Medium School</span></li>
-                        <li><span class="text-muted">P.O.Box 2908, Mwanza</span></li>
-                        <li><a href="#" class="text-primary text-decoration-none">Get directions</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <h5>Useful Links</h5>
-                    <ul class="nav flex-column">
-                        <li><a href="https://ilemelaschools.ac.tz/information/term-dates/">Term dates</a></li>
-                        <li><a href="https://ilemelaschools.ac.tz/admissions/">Admissions</a></li>
-                        <li><a href="https://ilemelaschools.ac.tz/coda/privacyandpolicy.html">Privacy Notice</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Contact Us</h5>
-                    <p class="text-muted small"><i class="bi bi-telephone"></i> +255 626 037 661</p>
-                    <p class="text-muted small"><i class="bi bi-envelope"></i> info@ilemelaschools.ac.tz</p>
-                </div>
-            </div>
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>© 2026 Ilemela Schools</p>
-                <ul class="list-unstyled d-flex gap-3">
-                    <li><a href="https://www.instagram.com/ilemelaenglishmedium/" class="fs-4 text-primary"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://wa.me/255626037661" class="fs-4 text-success"><i class="bi bi-whatsapp"></i></a></li>
-                </ul>
-            </div>
-        </footer>
+        <div class="row far-apart">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Our Address</h5>
+            <ul class="nav flex-column">
+              <li>
+                <a href="#" style="color: #1e3265; text-decoration: none"
+                  >Ilemela <br />
+                  English Medium School
+                </a>
+              </li>
+              <li>
+                <a href="#" style="color: #1e3265; text-decoration: none"
+                  >P.O.Box 2908</a
+                >
+              </li>
+              <li>
+                <a href="#" style="color: #1e3265; text-decoration: none"
+                  >Mwanza</a
+                >
+              </li>
+              <li><a href="https://maps.app.goo.gl/xoRqfjFM96vhqvtt6">Get directions</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Useful Links</h5>
+            <ul class="nav flex-column">
+              <li><a href="https://ilemelaschools.ac.tz/information/term-dates/">Term dates</a></li>
+              <li><a href="https://ilemelaschools.ac.tz/admissions/">Admissions</a></li>
+              <li><a href="https://ilemelaschools.ac.tz/admissions/application/">Application Form</a></li>
+              <li><a href="https://ilemelaschools.ac.tz/coda/privacyandpolicy.html">Data Protection & Privacy Notice</a></li>
+              <li><a href="https://ilemelaschools.ac.tz/coda/support.html">Support</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
+            <ul class="nav flex-column">
+              <li><a href="mailto:contact@ilemelaschools.ac.tz">Contact Us</a></li>
+              <li><a href="tel:+255626037661">+255 (0) 626 037 661</a></li>
+              <li>
+                <a href="mailto:info@ilemelaschools.ac.tz"
+                  >info@ilemelaschools.ac.tz</a
+                >
+              </li>
+            </ul>
+            <br>
+            <h5>Head Teacher's Office</h5>
+            <ul class="nav flex-column">
+              <li>
+                <a href="mailto:hteacher@ilemelaschools.ac.tz"
+                  >hteacher@ilemelaschools.ac.tz</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <ul class="list-unstyled iconsbrand d-flex">
+            
+            <li class="ms-3">
+              <a href="https://www.instagram.com/ilemelaenglishmedium/"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://wa.me/255626037661"><i class="bi bi-whatsapp"></i></a>
+            </li>
+            
+          </ul>
+          <p class="poppins-regular">© 2026 Ilemela Schools</p>
+          <div class="credit">
+            <p class="poppins-thinx-italic">
+              Designed, Developed by
+              <a href="mailto:nextron.inc@gmail.com">John The Coda</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
