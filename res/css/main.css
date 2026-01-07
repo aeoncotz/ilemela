@@ -325,11 +325,11 @@ body {
   width: 100%;
   background: #ccc;
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .recent-acctivies .img-bgroung .sensety:hover {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 p.color-blue {
@@ -516,19 +516,6 @@ footer ul.iconsbrand li a i {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.easy-navigation .block-nav .image {
-  width: 100%;
-  height: 100%;
-  background: url(../imgs/upload/dummy_700x700_ffffff_cccccc.png);
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .easy-navigation .block-nav .image.about {
@@ -821,4 +808,167 @@ ul strong {
 
 .admission, .applynow {
   text-decoration: none;
+}
+
+/* cookies */
+/* --- 1. FLOATING ANCHOR (Cookie Icon) --- */
+#cookie-anchor {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 50px;
+  height: 50px;
+  background: #004b87;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#cookie-anchor:hover {
+  transform: translateY(-3px);
+  border-color: #4f46e5;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+#cookie-anchor img {
+  width: 24px;
+  filter: none; /* Keeps original icon colors */
+}
+
+/* --- 2. POP-UP BANNER --- */
+#cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  background: #ffffff;
+  padding: 24px;
+  z-index: 1060;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  animation: slideUp 0.4s ease-out;
+}
+
+/* Responsive: Desktop floats to the right */
+@media (min-width: 768px) {
+  #cookie-banner {
+    left: auto;
+    width: 400px;
+  }
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.banner-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #1e293b !important;
+  margin: 0;
+}
+
+.banner-text a {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.banner-btns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* --- 3. SETTINGS MODAL --- */
+#cookie-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.cookie-modal {
+  background: #004b87;
+  padding: 32px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.cookie-option {
+  background: #16518d;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  color: #1e293b;
+  font-size: 14px;
+}
+
+/* --- BUTTON STYLES --- */
+.btn-accept, .btn-settings, .btn-save {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-accept {
+  background: #4f46e5; /* Indigo */
+  color: #ffffff !important;
+}
+
+.btn-accept:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+.btn-settings {
+  background: #f1f5f9;
+  color: #1e293b !important;
+  border: 1px solid #cbd5e1;
+}
+
+.btn-settings:hover {
+  background: #e2e8f0;
+}
+
+.btn-save {
+  background: #1e293b; /* Charcoal */
+  color: #ffffff !important;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Utility & Animations */
+.hidden { display: none !important; }
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }

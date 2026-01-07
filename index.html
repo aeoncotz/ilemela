@@ -384,7 +384,8 @@
     <!-- Recent Activities -->
     <div class="container-activities">
       <h2 class="heading-text poppins-light">Our Recent Activities</h2>
-      <div class="recent-acctivies">
+      <a href="https://www.instagram.com/ilemelaenglishmedium/" target="_blank">
+        <div class="recent-acctivies">
         <div class="activity-1 img-bgroung">
           <div class="sensety"></div>
         </div>
@@ -398,8 +399,9 @@
           <div class="sensety"></div>
         </div>
       </div>
+      </a>
       <div class="instagram-btn">
-        <a href="https://www.instagram.com/ilemelaenglishmedium/">Follow Us</a>
+        <a href="https://www.instagram.com/ilemelaenglishmedium/" target="_blanks">Follow Us</a>
       </div>
     </div>
 
@@ -434,8 +436,9 @@
             <ul class="nav flex-column">
               <li><a href="https://ilemelaschools.ac.tz/information/term-dates/">Term dates</a></li>
               <li><a href="https://ilemelaschools.ac.tz/admissions/">Admissions</a></li>
-              
               <li><a href="https://ilemelaschools.ac.tz/admissions/application/">Application Form</a></li>
+              <li><a href="https://ilemelaschools.ac.tz/coda/privacyandpolicy.html">Data Protection & Privacy Notice</a></li>
+            </ul>
           </div>
           <div class="col-md-5 offset-md-1 mb-3">
             <ul class="nav flex-column">
@@ -481,6 +484,47 @@
         </div>
       </footer>
     </div>
+
+    <!-- cookies icon -->
+    <div id="cookie-anchor" onclick="toggleModal(true)">
+        <img src="res/imgs/cookie.png" alt="Cookies" width="30">
+    </div>
+
+    <div id="cookie-banner" class="hidden">
+        <div class="banner-container">
+            <p class="banner-text poppins-light">
+                We use cookies to improve your experience and analyze traffic. 
+                <a href="javascript:void(0)" onclick="toggleModal(true)">Manage Preferences</a>
+            </p>
+            <div class="banner-btns">
+                <button class="btn-settings poppins-light" onclick="toggleModal(true)">Settings</button>
+                <button class="btn-accept poppins-light" onclick="saveConsent(true)">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cookie-modal-overlay" class="hidden">
+        <div class="cookie-modal">
+            <h2 style="margin-top:0" class="poppins-regular">Cookie Settings</h2>
+            <p class="poppins-light">Select which cookies you want to allow:</p>
+            
+            <div class="cookie-option poppins-light">
+                <span><strong>Necessary</strong><br><small>Required for site to work.</small></span>
+                <input type="checkbox" checked disabled>
+            </div>
+
+            <div class="cookie-option poppins-light">
+                <span><strong>Analytics</strong><br><small>Help us understand usage.</small></span>
+                <input type="checkbox" id="analytics-check">
+            </div>
+
+            <button class="btn-save poppins-light" onclick="saveFromModal()">Save Preferences</button>
+            <button class="btn-save poppins-light" style="background: #b22222; color:#ad4141; margin-top:10px;" onclick="toggleModal(false)">Cancel</button>
+        </div>
+    </div>
+
+    <!-- coookies script -->
+    <script src="res/js/cookies.js"></script>
 
     <!-- bootstrap script cdn -->
     <script
