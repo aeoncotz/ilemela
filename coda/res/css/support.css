@@ -2,7 +2,7 @@
     border: 1px solid #e2e8f0;
     border-radius: 15px;
     transition: all 0.3s ease;
-    background: #fff;
+    background: #ffffff;
 }
 .support-card:hover {
     transform: translateY(-5px);
@@ -12,7 +12,7 @@
 .icon-circle {
     width: 50px;
     height: 50px;
-    background: #f0f4ff;
+    background: #2a56cc;
     color: #1e3265;
     display: flex;
     align-items: center;
@@ -30,4 +30,8 @@
 .form-control:focus {
     border-color: #1e3265;
     box-shadow: none;
+}
+
+h5 {
+    color: #1e3265;
 }
