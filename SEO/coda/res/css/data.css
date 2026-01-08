@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.8;
+    color: #1e293b;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+.document-wrapper {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.policy-card {
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+    .policy-card { padding: 30px; margin-top: 20px; }
+    h1 { font-size: 1.8rem; }
+}
+
+/* Branding Header */
+.school-header {
+    border-bottom: 2px solid #1e3a8a; /* School Color */
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.school-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+p { margin-bottom: 20px; color: #334155; }
+
+/* Modern List Styling */
+ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: #334155;
+}
+
+li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.contact-info-block {
+    background-color: #f1f5f9;
+    border-left: 4px solid #1e3a8a;
+    padding: 25px;
+    margin: 40px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.highlight-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.footer-note {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
